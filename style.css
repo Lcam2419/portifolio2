@@ -1,0 +1,170 @@
+/* CONFIGURAÇÃO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #0d0d0d;
+    color: white;
+}
+
+/* MENU */
+header {
+    width: 100%;
+    padding: 20px 40px;
+    background: #111;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-bottom: 1px solid #222;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1 {
+    font-size: 1.5rem;
+    color: #00d4ff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00d4ff;
+}
+
+/* HERO */
+.hero {
+    padding-top: 120px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+}
+
+.hero-text p {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 25px;
+    background: #00d4ff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #00a9cc;
+}
+
+.btn-outline {
+    padding: 12px 25px;
+    border: 2px solid #00d4ff;
+    color: #00d4ff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: #00d4ff;
+    color: #000;
+}
+
+/* SEÇÕES */
+.section {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.3rem;
+    margin-bottom: 40px;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+    border: 1px solid #222;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    border-color: #00d4ff;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #00d4ff;
+}
+
+.card-btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00d4ff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.card-btn:hover {
+    background: #00a9cc;
+}
+
+/* CONTATO */
+#contato p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    margin-top: 40px;
+}
